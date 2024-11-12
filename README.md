@@ -83,7 +83,7 @@ See [here](https://arxiv.org/pdf/XXX.pdf) for an archived version of the article
 * [Simon Scheidegger](https://sites.google.com/site/simonscheidegger/) (Department of Economics, University of Lausanne)
 * [Olaf Schenk](https://search.usi.ch/en/people/9a52a2fdb8d3d26ec16fb1569b590909/schenk-olaf) (Department of Informatics, Institute of Computing, Università della Svizzera italiana)
 
-### Other Relate Resreach 
+### Other Relate Research
 * [The Climate in Climate Economics; Folini, D; Friedl, A.; Kubler, F; Scheidegger, S (2024)](climateChangeEcon/Climate_in_Climate_Economics)).
 
 
