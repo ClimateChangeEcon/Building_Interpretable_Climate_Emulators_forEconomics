@@ -64,15 +64,19 @@ This repository contains tools and scripts for climate modeling, simulation, and
 
 ## Citation
 
-Please cite [Building Interpretable Climate Emulators for Economics, A. Eftekhari, D. Folini, A. Friedl, F. Kübler, S. Scheidegger, O. Schenk](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021835) in your publications if it helps your research:
+Please cite [Building Interpretable Climate Emulators for Economics, A. Eftekhari, D. Folini, A. Friedl, F. Kübler, S. Scheidegger, O. Schenk](https://www.arxiv.org/abs/2411.10768) in your publications if it helps your research:
 ```
-@article{Climate_Emulator_2024,
-    title={Building Interpretable Climate Emulators for Economics},
-    author={Aryan Eftekhari and Doris Folini and Aleksandra Friedl and Felix Kübler and Simon Scheidegger and Olaf Schenk},
-    year={2024}
+@article{eftekhari2024buildinginterpretableclimateemulators,
+      title={Building Interpretable Climate Emulators for Economics}, 
+      author={Aryan Eftekhari and Doris Folini and Aleksandra Friedl and Felix Kübler and Simon Scheidegger and Olaf Schenk},
+      year={2024},
+      eprint={2411.10768},
+      archivePrefix={arXiv},
+      primaryClass={econ.EM},
+      url={https://arxiv.org/abs/2411.10768}, 
 }
 ```
-See [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021835) for an archived version of the article. 
+See [here](https://www.arxiv.org/abs/2411.10768) for an archived version of the article. 
 
 
 ### Authors
