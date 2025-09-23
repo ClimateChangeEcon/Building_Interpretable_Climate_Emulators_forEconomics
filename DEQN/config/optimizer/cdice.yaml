@@ -1,0 +1,4 @@
+optimizer: Adam
+# optimizer: RMSprop
+learning_rate: 1e-4
+clipvalue: 1.0

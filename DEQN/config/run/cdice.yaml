@@ -1,0 +1,12 @@
+N_sim_batch: 512
+N_episode_length: 256
+N_epochs_per_episode: 1
+# N_minibatch_size: 10
+N_minibatch_size: 64
+N_episodes: 10000
+keras_precision: float32
+# expectation_type: pseudo_random
+# expectation_pseudo_draws: 10
+
+### golden run
+#/home/simon/projects/DSGE_DEQ/src/sudden_stop/runs/nkdsge_no_util_norm/2021-01-27/17-06-41/ckpt-1231

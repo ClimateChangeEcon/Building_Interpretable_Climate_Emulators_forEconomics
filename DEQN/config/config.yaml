@@ -1,0 +1,19 @@
+hydra:
+  run:
+    dir: runs/${MODEL_NAME}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+defaults:
+  - constants: cdice
+  - net: cdice
+  - optimizer: cdice
+  - run: cdice
+  - variables: cdice
+seed: 46
+# can be NEW, LATEST, or a given checkpoint filename
+STARTING_POINT: LATEST
+CHECKPOINT_INTERVAL: 2
+MAX_TO_KEEP_NUMBER: 10
+MODEL_NAME: cdice_3sr_pd_mesmo
+#False-> Simulation; True -> draw
+initialize_each_episode: True
+error_filename: error_file.txt
+enable_check_numerics: False

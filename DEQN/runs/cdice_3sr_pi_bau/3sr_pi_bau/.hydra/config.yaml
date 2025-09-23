@@ -1,0 +1,43 @@
+constants:
+  constants: null
+net:
+  layers:
+  - hidden:
+      units: 1024
+      type: dense
+      activation: relu
+      init_scale: 1.0
+  - hidden:
+      units: 1024
+      type: dense
+      activation: relu
+      init_scale: 1.0
+  - output:
+      type: dense
+      activation: linear
+      init_scale: 1.0
+  net_initializer_mode: fan_avg
+  net_initializer_distribution: uniform
+optimizer:
+  optimizer: Adam
+  learning_rate: 1.0e-05
+  clipvalue: 1.0
+run:
+  N_sim_batch: 512
+  N_episode_length: 256
+  N_epochs_per_episode: 1
+  N_minibatch_size: 128
+  N_episodes: 10000
+  keras_precision: float32
+variables:
+  states: null
+  policies: null
+  definitions: null
+seed: 46
+STARTING_POINT: LATEST
+CHECKPOINT_INTERVAL: 2
+MAX_TO_KEEP_NUMBER: 10
+MODEL_NAME: cdice_3sr_pi_bau
+initialize_each_episode: true
+error_filename: error_file.txt
+enable_check_numerics: false
