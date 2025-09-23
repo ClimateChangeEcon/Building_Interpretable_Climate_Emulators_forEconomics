@@ -386,7 +386,7 @@ perform two steps that are outlined in the section below for each model. Please 
 **cdice_3sr_pd_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pd_opt/3sr_pd_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pd_opt/3sr_pd_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -395,7 +395,7 @@ python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 
 **cdice_3sr_pi_bau:**
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_bau/3sr_pi_bau
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_bau/3sr_pi_bau
 
 python post_process_3sr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -405,7 +405,7 @@ python post_process_3sr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_3sr_pi_ccs_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_ccs_opt/3sr_pi_ccs_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_ccs_opt/3sr_pi_ccs_opt
 
 python post_process_3sr_ccs.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -415,7 +415,7 @@ python post_process_3sr_ccs.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_3sr_pi_climber_bau:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_climber_bau/3sr_pi_climber_bau
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_climber_bau/3sr_pi_climber_bau
 
 python post_process_3sr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -425,7 +425,7 @@ python post_process_3sr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_3sr_pi_climber_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_climber_opt/3sr_pi_climber_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_climber_opt/3sr_pi_climber_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -443,7 +443,7 @@ To unarchive respective solutions please follow:
 **cdice_3sr_pi_highdam_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_highdam_opt/3sr_pi_highdam_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_highdam_opt/3sr_pi_highdam_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -453,7 +453,7 @@ python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_3sr_pi_mesmo_bau:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_mesmo_bau/3sr_pi_mesmo_bau
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_mesmo_bau/3sr_pi_mesmo_bau
 
 python post_process_3sr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -463,7 +463,7 @@ python post_process_3sr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_3sr_pi_mesmo_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_mesmo_opt/3sr_pi_mesmo_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_mesmo_opt/3sr_pi_mesmo_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DI
 ```
@@ -473,7 +473,7 @@ python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_3sr_pi_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_opt/3sr_pi_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_opt/3sr_pi_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -483,7 +483,7 @@ python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_3sr_pi_psi05_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_psi05_opt/3sr_pi_psi05_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_psi05_opt/3sr_pi_psi05_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -493,7 +493,7 @@ python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_3sr_pi_psi2_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_psi2_opt/3sr_pi_psi2_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_psi2_opt/3sr_pi_psi2_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -503,7 +503,7 @@ python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_4pr_pd_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pd_opt/4pr_pd_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pd_opt/4pr_pd_opt
 
 python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -513,7 +513,7 @@ python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_4pr_pi_bau:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_bau/4pr_pi_bau
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_bau/4pr_pi_bau
 
 python post_process_4pr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -523,7 +523,7 @@ python post_process_4pr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_4pr_pi_ccs_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_ccs_opt/4pr_pi_ccs_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_ccs_opt/4pr_pi_ccs_opt
 
 python post_process_4pr_ccs.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -533,7 +533,7 @@ python post_process_4pr_ccs.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_4pr_pi_climber_bau:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_climber_bau/4pr_pi_climber_bau
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_climber_bau/4pr_pi_climber_bau
 
 python post_process_4pr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -543,7 +543,7 @@ python post_process_4pr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_4pr_pi_climber_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_climber_opt/4pr_pi_climber_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_climber_opt/4pr_pi_climber_opt
 
 python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -560,7 +560,7 @@ To unarchive respective solutions please follow:
 **cdice_4pr_pi_highdam_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_highdam_opt/4pr_pi_highdam_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_highdam_opt/4pr_pi_highdam_opt
 
 python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -570,7 +570,7 @@ python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_4pr_pi_mesmo_bau:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_mesmo_bau/4pr_pi_mesmo_bau
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_mesmo_bau/4pr_pi_mesmo_bau
 
 python post_process_4pr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -580,7 +580,7 @@ python post_process_4pr_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_F
 **cdice_4pr_pi_mesmo_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_mesmo_opt/4pr_pi_mesmo_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_mesmo_opt/4pr_pi_mesmo_opt
 
 python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -597,7 +597,7 @@ To unarchive respective solutions please follow:
 **cdice_4pr_pi_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_opt/4pr_pi_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_opt/4pr_pi_opt
 
 python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -607,7 +607,7 @@ python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_4pr_pi_psi05_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_psi05_opt/4pr_pi_psi05_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_psi05_opt/4pr_pi_psi05_opt
 
 python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -617,7 +617,7 @@ python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_4pr_pi_psi2_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4pr_pi_psi2_opt/4pr_pi_psi2_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4pr_pi_psi2_opt/4pr_pi_psi2_opt
 
 python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -627,7 +627,7 @@ python post_process_4pr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_
 **cdice_4prx_pi_bau:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4prx_pi_bau/4prx_pi_bau
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4prx_pi_bau/4prx_pi_bau
 
 python post_process_4prx_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -637,7 +637,7 @@ python post_process_4prx_bau.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_
 **cdice_4prx_pi_ccs_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4prx_pi_ccs_opt/4prx_pi_ccs_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4prx_pi_ccs_opt/4prx_pi_ccs_opt
 
 python post_process_4prx_ccs.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -647,7 +647,7 @@ python post_process_4prx_ccs.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_
 **cdice_4prx_pi_highdam_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4prx_pi_highdam_opt/4prx_pi_highdam_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4prx_pi_highdam_opt/4prx_pi_highdam_opt
 
 python post_process_4prx.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -657,7 +657,7 @@ python post_process_4prx.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM
 **cdice_4prx_pi_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4prx_pi_opt/4prx_pi_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4prx_pi_opt/4prx_pi_opt
 
 python post_process_4prx.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -667,7 +667,7 @@ python post_process_4prx.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM
 **cdice_4prx_pi_psi05_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4prx_pi_psi05_opt/4prx_pi_psi05_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4prx_pi_psi05_opt/4prx_pi_psi05_opt
 
 python post_process_4prx.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -677,7 +677,7 @@ python post_process_4prx.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM
 **cdice_4prx_pi_psi2_opt:**
 
 ```
-export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_4prx_pi_psi2_opt/4prx_pi_psi2_opt
+export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_4prx_pi_psi2_opt/4prx_pi_psi2_opt
 
 python post_process_4prx.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```

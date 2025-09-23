@@ -6,14 +6,14 @@ from typing import List, Dict, Tuple, Union
 
 
 
-def land_emission(folder_name='/files/Replication_Building_Emulators/data/land_emission/'):
+def land_emission(folder_name='../../data/land_emission/'):
 
     file_name = folder_name + 'Gasser_et_al_2020_best_guess.nc'
     data = nc.Dataset(file_name)
 
     return data
 
-def pulse_fraction(test_type, T, conditions:Union['PD','PI']='PD', folder_name:str = '/files/Replication_Building_Emulators/data/pulse/'):
+def pulse_fraction(test_type, T, conditions:Union['PD','PI']='PD', folder_name:str = '../../data/pulse/'):
 
 
     name = ''
@@ -192,7 +192,7 @@ def pulse_fraction(test_type, T, conditions:Union['PD','PI']='PD', folder_name:s
 
     return [pulse_frac,name] 
 
-def cmip_emission(scenerio_name: str, T_start: int = 1765, T_end: int = 2500, folder_name: str = '/files/Replication_Building_Emulators/data/emission/',emission_type:Union['fossil','fossil+land','land'] = 'fossil+land' ):
+def cmip_emission(scenerio_name: str, T_start: int = 1765, T_end: int = 2500, folder_name: str = '../../data/emission/',emission_type:Union['fossil','fossil+land','land'] = 'fossil+land' ):
 
     assert T_start >= 1765
     assert T_end   <= 2500
@@ -233,7 +233,7 @@ def cmip_emission(scenerio_name: str, T_start: int = 1765, T_end: int = 2500, fo
 
     return [data_val, data_year]
 
-def cmip_concentration(scenerio_name: str, T_start: int = 1765, T_end: int = 2500,  concentration_type:Union['CO2EQ','KYOTO-CO2EQ','CO2'] = 'CO2' , folder_name: str = '/files/Replication_Building_Emulators/data/concentration/' ):
+def cmip_concentration(scenerio_name: str, T_start: int = 1765, T_end: int = 2500,  concentration_type:Union['CO2EQ','KYOTO-CO2EQ','CO2'] = 'CO2' , folder_name: str = '../../data/concentration/' ):
 
     assert T_start >= 1765
     assert T_end <= 2500
@@ -277,7 +277,7 @@ def cmip_concentration(scenerio_name: str, T_start: int = 1765, T_end: int = 250
 
     return [data_val, data_year]
 
-def cmip_temperature(scenerio_name: str, T_start: int = 1765, T_end: int = 2500, folder_name: str = '/files/Replication_Building_Emulators/data/temperature/'):
+def cmip_temperature(scenerio_name: str, T_start: int = 1765, T_end: int = 2500, folder_name: str = '../../data/temperature/'):
 
     assert T_start >= 1765
     assert T_end <= 2500
@@ -325,7 +325,7 @@ def cmip_temperature(scenerio_name: str, T_start: int = 1765, T_end: int = 2500,
     return [data_val, data_year]
 
 
-def reactive_forcing(T_start: int = 1765, T_end: int = 2500, folder_name: str = '/files/Replication_Building_Emulators/data/forcing/'):
+def reactive_forcing(T_start: int = 1765, T_end: int = 2500, folder_name: str = '../../data/forcing/'):
 
 
     radiative_forcing_co2_data   = np.loadtxt(folder_name + '/radiative_forcing_co2.txt').T
@@ -363,7 +363,7 @@ def reactive_forcing(T_start: int = 1765, T_end: int = 2500, folder_name: str = 
 
 
 # model_name_set=[ 'CanESM5','GFDL-ESM2M','CESM', 'ACCESS','MIROC-ES2L', 'UKESM1', 'MPIESM','NorESM2','CNRM-ESM2-1','UVIC_ESCM','LOVECLIM','MIROC-lite', 'DCESS','CLIMBER2', 'MESM', 'PLASIM-GENIE','Bern','IAPRAS']
-def zec_1000(T_start: int = 0, T_end: int = 500, var='co2', folder_name: str = '/files/Replication_Building_Emulators/data/ZEC/', model_name_set=['GFDL-ESM2M', 'ACCESS','MIROC-ES2L', 'UKESM1', 'MPIESM','NorESM2','CNRM-ESM2-1','UVIC_ESCM','LOVECLIM','MIROC-lite', 'DCESS','CLIMBER2', 'MESM', 'PLASIM-GENIE','Bern','IAPRAS']):
+def zec_1000(T_start: int = 0, T_end: int = 500, var='co2', folder_name: str = '../../data/ZEC/', model_name_set=['GFDL-ESM2M', 'ACCESS','MIROC-ES2L', 'UKESM1', 'MPIESM','NorESM2','CNRM-ESM2-1','UVIC_ESCM','LOVECLIM','MIROC-lite', 'DCESS','CLIMBER2', 'MESM', 'PLASIM-GENIE','Bern','IAPRAS']):
 
     experiment_id = "1pct-brch-1000PgC"
 
@@ -394,7 +394,7 @@ def zec_1000(T_start: int = 0, T_end: int = 500, var='co2', folder_name: str = '
 
 # model_name_set=[ 'CanESM5','GFDL-ESM2M','CESM', 'ACCESS','MIROC-ES2L', 'UKESM1', 'MPIESM','NorESM2','CNRM-ESM2-1','UVIC_ESCM','LOVECLIM','MIROC-lite', 'DCESS','CLIMBER2', 'MESM', 'PLASIM-GENIE','Bern','IAPRAS']
 
-def zec_1000_cess(T_start: int = 0, T_end: int = 100, var='co2', folder_name: str = '/files/Replication_Building_Emulators/data/ZEC/',model_name_set=['GFDL-ESM2M', 'ACCESS','MIROC-ES2L', 'UKESM1', 'MPIESM','NorESM2','CNRM-ESM2-1','UVIC_ESCM','LOVECLIM','MIROC-lite', 'DCESS','CLIMBER2', 'MESM', 'PLASIM-GENIE','Bern','IAPRAS']):
+def zec_1000_cess(T_start: int = 0, T_end: int = 100, var='co2', folder_name: str = '../../data/ZEC/',model_name_set=['GFDL-ESM2M', 'ACCESS','MIROC-ES2L', 'UKESM1', 'MPIESM','NorESM2','CNRM-ESM2-1','UVIC_ESCM','LOVECLIM','MIROC-lite', 'DCESS','CLIMBER2', 'MESM', 'PLASIM-GENIE','Bern','IAPRAS']):
 
     # find cecation point
     [data_co2,_]=zec_1000(T_start=0, T_end=500, var='co2', folder_name=folder_name,model_name_set=model_name_set)

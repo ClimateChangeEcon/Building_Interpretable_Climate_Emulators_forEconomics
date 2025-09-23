@@ -271,7 +271,7 @@ For a full set of dependencies see the environment.yaml - this includes the deve
 
 ### Controlled randomness
 
-The random seed for our computations in *Section 4 - Numerical Experiments* is set at ``Replication_Building_Emulators/DEQN/config/config.yaml``, line 10.
+The random seed for our computations in *Section 4 - Numerical Experiments* is set at ``Building_Interpretable_Climate_Emulators_forEconomics/DEQN/config/config.yaml``, line 10.
 
 
 ### Memory and runtime requirements
@@ -300,7 +300,7 @@ In this section, we provide the basic instructions on how to compute the results
 First, go to the following folder:
 
 ```
-$ cd <PATH to the repository>Replication_Building_Emulators/figures_replication/figures_3-4_14-25
+$ cd <PATH to the repository>Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_3-4_14-25
 ```
 Script  `solver.py` fits the 3SR and 4PR carbon cycle models to benchmark datasets, performing a grid search over penalty parameters.
 To run the fitting procedure please perfrom the following:
@@ -335,13 +335,13 @@ In this section, we provide the basic instructions on how to compute the results
 First, go to the following folder:
 
 ```
-$ cd <PATH to the repository>Replication_Building_Emulators/figures_replication/figures_5-8_26-31
+$ cd <PATH to the repository>Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_5-8_26-31
 ```
 
 First, make sure you are at the root directory of DEQN by changing path to the following sub-directory:
 
 ```
-$ cd <PATH to the repository>Replication_Building_Emulators/DEQN
+$ cd <PATH to the repository>Building_Interpretable_Climate_Emulators_forEconomics/DEQN
 ```
 
 To start the computation from scratch, change the specifications in the config file (config/config.yaml) to the particular model of interest while leaving the other entries untouched. The following entries will have to be adjusted:
@@ -368,7 +368,7 @@ python run_deepnet.py
 To analyze the the raw results for the particular model solved, you need to perform two steps:
 
 ```
-$ export USE_CONFIG_FROM_RUN_DIR=$ cd export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/<MODEL_FOLDER>
+$ export USE_CONFIG_FROM_RUN_DIR=$ cd export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/<MODEL_FOLDER>
 
 $ python post_process_XXX.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 
@@ -390,7 +390,7 @@ MODEL_NAME:  cdice_3sr_pi_opt
 To analyze this model, you need to run the following:
 
 ```
- export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Replication_Building_Emulators/DEQN/runs/cdice_3sr_pi_opt/3sr_pi_opt
+ export USE_CONFIG_FROM_RUN_DIR=<PATH_TO_THE_FOLDER>/Building_Interpretable_Climate_Emulators_forEconomics/DEQN/runs/cdice_3sr_pi_opt/3sr_pi_opt
 
 python post_process_3sr.py STARTING_POINT=LATEST hydra.run.dir=$USE_CONFIG_FROM_RUN_DIR
 ```
@@ -407,7 +407,7 @@ In this section, we provide the basic instructions on how to compute the results
 First, go to the following folder:
 
 ```
-$ cd <PATH to the repository>Replication_Building_Emulators/figures_replication
+$ cd <PATH to the repository>Building_Interpretable_Climate_Emulators_forEconomics/figures_replication
 ```
 
 Folders `figure_9`, `figure_10`, `figure_11`, `figure_12`, `figure_13` contain all the scripts and data for replication of respective figures.
