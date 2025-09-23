@@ -1,0 +1,11 @@
+Data comes from these sources:
+
+http://www.pik-potsdam.de/~mmalte/rcps/
+---> RCP* [re-directed from pik to "RCP Database at www.iiasa.ac.at/web-apps/tnt/RcpDb/"]
+
+NOTE, ORIGINAL VS GIVEN FILE NAMES FOR:
+RCP3PD ---> RCP26
+RCP6   ---> RCP60
+
+https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&page=40
+---> SSP total / fossil fuel / land use CO2 emission data   [iiasa_iamc_db_*]
