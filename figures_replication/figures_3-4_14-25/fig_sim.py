@@ -856,7 +856,26 @@ def do(_conditions):
 
         print(
             "     [TABLE] Summary for 3SR/4PR (a, m_eq, time_scale, diff_o_l, A):")
-        operations.tabulate(_results, title='result',vars=['a', 'm_eq', 'time_scale', 'diff_o_l', "A"])
+        table = operations.tabulate(_results, title='result',vars=['a', 'm_eq', 'time_scale', 'diff_o_l', "A"])
+
+        if(_conditions=='PI' and benchmakr_fit_name=='MMM'):
+            save_path = f'figs_replication/table_1_{benchmakr_fit_name}_{_conditions}.txt'
+            with open(save_path, "w", encoding="utf-8") as f:
+                f.write(table.get_string())
+                print(f"     [SAVE] Table saved to: {save_path}")
+
+        if(_conditions=='PD' and benchmakr_fit_name=='MMM'):
+            save_path = f'figs_replication/table_10_{benchmakr_fit_name}_{_conditions}.txt'
+            with open(save_path, "w", encoding="utf-8") as f:
+                f.write(table.get_string())
+                print(f"     [SAVE] Table saved to: {save_path}")
+
+        if(_conditions=='PI'):
+            save_path = f'figs_replication/table_11_{benchmakr_fit_name}_{_conditions}.txt'
+            with open(save_path, "w", encoding="utf-8") as f:
+                f.write(table.get_string())
+                print(f"     [SAVE] Table saved to: {save_path}")
+
 
     print("\n[2/6] Loading selected model...")
     load_path = f'result/selected_model_{_conditions}.pkl'

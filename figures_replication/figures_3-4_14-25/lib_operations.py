@@ -478,3 +478,4 @@ def tabulate(results, title='Table', vars=['a', 'm_eq', 'time_scale', 'diff_o_l'
                 )
 
     print(table)
+    return table
