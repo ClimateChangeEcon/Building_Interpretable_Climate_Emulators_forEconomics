@@ -1,17 +1,29 @@
 # Climate Emulator Repository
 
-This folder contains Python scripts for building, fitting, and visualizing climate emulators based on the framework described in the paper. The workflow is designed for Integrated Assessment Model (IAM) practitioners to create interpretable and efficient carbon cycle emulators.
+This folder contains Python scripts for building, fitting, and visualizing climate emulators based on the framework described in the paper. The workflow is designed for Integrated Assessment Model (IAM) practitioners to create interpretable and efficient carbon cycle emulators. 
 
-For visualizations:
- - ```python3 fig_benchmark_pulse.py``` Plot benchmark pulse decays for different models
- - ```python3 fig_RCP_RF.py```  Plots related to the RCP scenerios
- - ```python3 fig_analysis.py``` Analyse emulator hyperparameters and solve extrema paramters for the MMM fitted emulator.
- - ```python3 fig_sim.py``` Different simulations using the extrama paramater of MMM fitted emulator.
+To run the full pipeline:
+```bash
+$ sh run_all.sh
+```
+
+The folder ```result/``` contains all solved models, including those referenced in the paper. If users still wish to execute the solver, it can be done for a 250-year timespan under Preindustrial (PI) and Present-Day (PD) conditions for MMM, CLIMBER2, and MESMO. This is handled automatically by ```$ sh run_all.sh```. To excite the solver explicitly, simply rename the existing ```result/``` folder (e.g., to ```result_bk```) and execute ```$ sh run_all.sh```, which runs:
+```bash
+$ python3 solver.py PI 250 MMM
+$ python3 solver.py PD 250 MMM
+$ python3 solver.py PI 250 MESMO 
+$ python3 solver.py PD 250 MESMO
+$ python3 solver.py PI 250 CLIMBER2  
+$ python3 solver.py PD 250 CLIMBER2
+```
+__NOTICE: Non-convex optimization solved via differential evolution; minor (<1%) stochastic variability may occur._
+
 ---
 
 ## Requirements
 
-* Python 3.8+, numpy, scipy, matplotlib, prettytable, pickle, logging, multiprocessing 
+* Python 3.8+, numpy, scipy, matplotlib, prettytable, pickle, logging, multiprocessing
+* Latex is requred ( see https://www.latex-project.org/get/) 
 
 ---
 
