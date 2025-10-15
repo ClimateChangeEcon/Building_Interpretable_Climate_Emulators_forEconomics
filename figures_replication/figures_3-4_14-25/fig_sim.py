@@ -841,16 +841,17 @@ def do(_conditions):
         print(f"  -> Benchmark: {benchmakr_fit_name}")
         _root = 'result/' + _conditions + '/T-250/'
         _model_set = [model_3sr, model_4pr]
-        _test_name = benchmakr_fit_name + "-0.01_0.0001_0.0001"
+        _test_name_3sr = benchmakr_fit_name + "-0.01_0.0001_0.0"
+        _test_name_4pr = benchmakr_fit_name + "-0.01_0.0001_0.0001"
 
         print(
-            f"     [LOAD] Loading 3SR from root: {_root}  test: {_test_name}")
-        temp = operations.load_results(root=_root, test_name=_test_name,model_set=_model_set, T_sim_set=[50, 125, 250, 500],conditions=_conditions)
+            f"     [LOAD] Loading 3SR from root: {_root}  test: {_test_name_3sr}")
+        temp = operations.load_results(root=_root, test_name=_test_name_3sr,model_set=_model_set, T_sim_set=[50, 125, 250, 500],conditions=_conditions)
         _results = {'3SR': copy.copy(temp['3SR'])}
 
         print(
-            f"     [LOAD] Loading 4PR from root: {_root}  test: {_test_name}")
-        temp = operations.load_results(root=_root, test_name=_test_name,model_set=_model_set, T_sim_set=[50, 125, 250, 500],conditions=_conditions)
+            f"     [LOAD] Loading 4PR from root: {_root}  test: {_test_name_4pr}")
+        temp = operations.load_results(root=_root, test_name=_test_name_4pr,model_set=_model_set, T_sim_set=[50, 125, 250, 500],conditions=_conditions)
         _results['4PR'] = copy.copy(temp['4PR'])
 
         print(

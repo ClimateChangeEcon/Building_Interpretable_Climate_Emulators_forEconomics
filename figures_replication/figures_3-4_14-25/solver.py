@@ -184,7 +184,7 @@ def obj_fun(z: np.array, model: callable, rho: list) -> float:
 
     return float(loss + pen_1*rho[0] + pen_2*rho[1] + pen_3*rho[2])
 
-def fit_model(folder_name: str, model: callable, rho: list, seed: int = 1, verbose: bool = False) -> list:
+def fit_model(folder_name: str, model: callable, rho: list, seed: int = 10, verbose: bool = False) -> list:
     os.makedirs(folder_name, exist_ok=True)
 
     logging.root.handlers = []
@@ -219,7 +219,8 @@ def fit_model(folder_name: str, model: callable, rho: list, seed: int = 1, verbo
         maxiter     = int(1e6),
         tol         = 1e-6,
         polish      = False,
-        init        ='sobol',
+        #init        ='sobol',
+        init        ='halton',
         seed        = seed,
         x0          = np.concatenate((z0_1, z0_2)),
         constraints = (scipy.optimize.NonlinearConstraint(lambda z: constraints(z, model), 0, 0)),

@@ -97,13 +97,13 @@ def pulse_fraction(test_type, T, conditions:Union['PD','PI']='PD', folder_name:s
             name = 'TOTEM2'
         elif test_type == 'MMM':
             pulse_frac = data[:,17]
-            name = '$\mu$'
+            name = r'$\mu$'
         elif test_type == 'MMMU':
             pulse_frac = data[:,17] + data[:,18]*2
-            name = '$\mu^+$'
+            name = r'$\mu^+$'
         elif test_type == 'MMMD':
             pulse_frac = data[:,17] - data[:,18]*2
-            name = '$\mu^-$'
+            name = r'$\mu^-$'
         else:
             raise Exception("Invalid test_type")
 
@@ -166,13 +166,13 @@ def pulse_fraction(test_type, T, conditions:Union['PD','PI']='PD', folder_name:s
             name = 'Bern-SAR'
         elif test_type == 'MMM':
             pulse_frac = data[:,11]
-            name = '$\mu$'
+            name = r'$\mu$'
         elif test_type == 'MMMU':
             pulse_frac = data[:,11] + data[:,12]*2
-            name = '$\mu^+$'
+            name = r'$\mu^+$'
         elif test_type == 'MMMD':
             pulse_frac = data[:,11] - data[:,12]*2
-            name = '$\mu^-$'
+            name = r'$\mu^-$'
         else:
             raise Exception("Invalid test_type")
 
