@@ -16,7 +16,7 @@ $ python3 solver.py PD 250 MESMO
 $ python3 solver.py PI 250 CLIMBER2  
 $ python3 solver.py PD 250 CLIMBER2
 ```
-__NOTICE: Non-convex optimization solved via differential evolution; minor (<1%) stochastic variability may occur._
+_NOTICE: Non-convex optimization solved via differential evolution; minor (<1%) stochastic variability may occur._
 
 ---
 
