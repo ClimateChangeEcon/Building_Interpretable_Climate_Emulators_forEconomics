@@ -23,7 +23,7 @@ _NOTICE: Non-convex optimization solved via differential evolution; minor (<1%) 
 ## Requirements
 
 * Python 3.8+, numpy, scipy, matplotlib, prettytable, pickle, logging, multiprocessing
-* Latex is requred ( see https://www.latex-project.org/get/) 
+* Latex is requred (see [Latex installation](https://www.latex-project.org/get/)) 
 
 ---
 

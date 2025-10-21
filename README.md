@@ -268,15 +268,21 @@ For a full set of dependencies see the environment.yaml - this includes the deve
 
 * The file ``requirements.txt`` lists the detailed dependencies. Please run "pip install -r requirements.txt" as the first step. See [here](https://pip.pypa.io/en/stable/user_guide/#ensuring-repeatability) for further instructions on creating and using the ``requirements.txt`` file.
 
+* To be able to reproduce the plots it is necessary to have [Latex](https://www.latex-project.org/get/) installed.
+
 
 ### Controlled randomness
 
-The random seed for our computations in *Section 4 - Numerical Experiments* is set at ``Building_Interpretable_Climate_Emulators_forEconomics/DEQN/config/config.yaml``, line 10.
+The random seed for the DEQN computations in *Section 4 - Numerical Experiments* is set at ``Building_Interpretable_Climate_Emulators_forEconomics/DEQN/config/config.yaml``, line 10.
+
+The random seed for the claimte emulator calibration computations in *Section 3 - A Calibrated Climate Emulator* is set at ``Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_3-4_14-25/solver.py``, line 187.
 
 
 ### Memory and runtime requirements
 
 * To solve one IAM model as discussed in *Section 4 - Numerical Experiments* until full convergence, it requires about 15 min on an ordinary laptop. All those models presented in the paper were solved using our [DEQN library](DEQN), which we ran on an 8-core Intel compute node on [https://nuvolos.cloud](https://nuvolos.cloud) with 64GB of RAM, and 100Gb of fast local storage (SSD).
+
+* To calibrate the climate emulator for all necessary parametrisations and under PI and PD initial conditions as presented in *Section 3 - A Calibrated Climate Emulator* and reported in the [calibration results](Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_3-4_14-25/result) folder, it requires less than an hour on an ordinary laptop. All calibrations presented in the paper were solved using the [solver](Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_3-4_14-25/solver.py), which we ran on an 8-core Intel compute node on [https://nuvolos.cloud](https://nuvolos.cloud) with 64GB of RAM, and 100Gb of fast local storage (SSD).
 
 * All the postprocessing codes (to produce the summary statistics, plots, and so forth) were run on an ordinary 4-core Intel-based laptop with Ubuntu version 18.04.5 LTS and consume typically few seconds to run.
 
@@ -302,28 +308,12 @@ First, go to the following folder:
 ```
 $ cd <PATH to the repository>Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_3-4_14-25
 ```
-Script  `solver.py` fits the 3SR and 4PR carbon cycle models to benchmark datasets, performing a grid search over penalty parameters.
-To run the fitting procedure please perfrom the following:
+This folder contains Python scripts for building, fitting, and visualizing climate emulators based on the framework described in the paper. The workflow is designed for Integrated Assessment Model (IAM) practitioners to create interpretable and efficient carbon cycle emulators. 
+
+To run the full pipeline:
 ```bash
-python3 solver.py <conditions: PI|PD> <T:int> <benchmark_sel>
+$ sh run_all.sh
 ```
-* **PI**: Preindustrial benchmark set
-* **PD**: Present-day benchmark set
-* `<T>`: Time horizon in years
-* `<benchmark_sel>`: One benchmark model name from the allowed set for the selected condition
-
-For example,
-
-```bash
-python3 solver.py PD 250 CLIMBER2
-```
-Results form every model are stored in this [folder](figures_replication/figures_3-4_14-25/result).
-
-For visualizations:
- - ```python3 fig_benchmark_pulse.py``` Plot benchmark pulse decays for differnent models;
- - ```python3 fig_RCP_RF.py```  Plots related to the RCP scenerios;
- - ```python3 fig_analysis.py``` Analysie emulator hyperpmanters and solve extreama paramters for the MMM fitted emulator;
- - ```python3 fig_sim.py``` Different simulations using using the extrama parmater of MMM fitted emulator.
 
 * More details are provided in this general [readme](figures_replication/README.md) and [this readme](figures_replication/figures_3-4_14-25/README.md) that is specific to the section 3.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PY=python3.12
+PY=python3
 
 # run relative to this script's directory (assumes no spaces in path)
 cd $(dirname $0) || exit 1
