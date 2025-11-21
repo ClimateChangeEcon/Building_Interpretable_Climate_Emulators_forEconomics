@@ -4,6 +4,9 @@
 <img src="screens/regional_pattern_WGI_land_plus1C.png" width="800px"/>
 </p>
 
+## Note
+The README is optimised to view in markdown (.md) format. In README.pdf some links may not work correctly.
+
 ## Description of programs and datasets used
 
 ### Organization of the repository
@@ -260,9 +263,9 @@ For simplicity, we added these datasets to the following folders:
 ### Software requirements
 
 The basic dependencies are tensorflow==2.3, hydra-core >= 1.1 and tensorboard (for monitoring).
-For a full set of dependencies see the environment.yaml - this includes the development environment as well (Spyder 3).
+For a full set of dependencies see the environment.yaml. The materials have been run and validated on a Linux OS, and the instructions to replicate the results may require some alterations on Windows based systems.
 
-* We provide implementations that use python 3.10.
+* We provide implementations that use python 3.11.
 
 * For the  The basic dependencies are [Tensorflow==2.x](https://www.tensorflow.org/), [hydra](https://hydra.cc/) and [Tensorboard](https://www.tensorflow.org/tensorboard) (for monitoring).
 
