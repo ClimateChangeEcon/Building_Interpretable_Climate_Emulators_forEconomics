@@ -273,6 +273,13 @@ For a full set of dependencies see the environment.yaml. The materials have been
 
 * To be able to reproduce the plots it is necessary to have [Latex](https://www.latex-project.org/get/) installed.
 
+### Docker image
+
+To pull the pre-built Docker image use this command:
+
+```bash
+docker pull nuvolos/public:648167_building_emulators
+```
 
 ### Controlled randomness
 
