@@ -265,7 +265,7 @@ For simplicity, we added these datasets to the following folders:
 The basic dependencies are tensorflow==2.3, hydra-core >= 1.1 and tensorboard (for monitoring).
 For a full set of dependencies see the environment.yaml. The materials have been run and validated on a Linux OS, and the instructions to replicate the results may require some alterations on Windows based systems.
 
-* We provide implementations that use python 3.11.
+* We provide implementations that use python >= 3.10.
 
 * For the  The basic dependencies are [Tensorflow==2.x](https://www.tensorflow.org/), [hydra](https://hydra.cc/) and [Tensorboard](https://www.tensorflow.org/tensorboard) (for monitoring).
 
@@ -420,7 +420,7 @@ Folders `figure_9`, `figure_10`, `figure_11`, `figure_12`, `figure_13` contain a
 * [Aryan Eftekhari](https://sites.google.com/view/eftekhari/?pli=1) (Universita della Svizzera italiana, Faculty of Informatics, and the University of Lausanne, Department of Economics)
 * [Doris Folini](https://iac.ethz.ch/people-iac/person-detail.NDY3MDg=.TGlzdC82MzcsLTE5NDE2NTk2NTg=.html) (ETH Zuerich, Institute for Atmospheric and Climate Science)
 * [Felix Kuebler](https://sites.google.com/site/fkubler/) (the University of Zuerich, Department for Banking and Finance, and Swiss Finance Institute)
-* [Aleksandra Friedl](https://sites.google.com/view/aleksandrafriedl/home) (the University of Lausanne, Department of Economics, and ifo Institute)
+* [Aleksandra Friedl](https://sites.google.com/view/aleksandrafriedl/home) (ifo Institute, and the University of Munich)
 * [Simon Scheidegger](https://sites.google.com/site/simonscheidegger) (the University of Lausanne, Department of Economics)
 * [Olaf Schenk](https://search.usi.ch/en/people/9a52a2fdb8d3d26ec16fb1569b590909/schenk-olaf) (Universita della Svizzera italiana, Faculty of Informatics)
 
