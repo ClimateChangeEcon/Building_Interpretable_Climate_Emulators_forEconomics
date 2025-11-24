@@ -263,7 +263,7 @@ For simplicity, we added these datasets to the following folders:
 ### Software requirements
 
 The core dependencies are tensorflow==2.3, hydra-core>=1.1, and tensorboard (for monitoring).
-For the full list of requirements, please refer to [environment.yaml](Building_Interpretable_Climate_Emulators_forEconomics/DEQN/environment.yaml).
+For the full list of requirements, please refer to [environment.yaml](DEQN/environment.yaml).
 All materials were run and validated on a Linux OS, and replication on Windows systems may require minor adjustments.
 
 * We provide implementations that use python >= 3.10.
@@ -306,7 +306,7 @@ The random seed for the claimte emulator calibration computations in *Section 3 
 
 * To solve one IAM model as discussed in *Section 4 - Numerical Experiments* until full convergence, it requires about 15 min on an ordinary laptop. All those models presented in the paper were solved using our [DEQN library](DEQN), which we ran on an 8-core Intel compute node on [https://nuvolos.cloud](https://nuvolos.cloud) with 64GB of RAM, and 100Gb of fast local storage (SSD).
 
-* To calibrate the climate emulator for all necessary parametrisations and under PI and PD initial conditions as presented in *Section 3 - A Calibrated Climate Emulator* and reported in the [calibration results](Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_3-4_14-25/result) folder, it requires less than an hour on an ordinary laptop. All calibrations presented in the paper were solved using the [solver](Building_Interpretable_Climate_Emulators_forEconomics/figures_replication/figures_3-4_14-25/solver.py), which we ran on an 8-core Intel compute node on [https://nuvolos.cloud](https://nuvolos.cloud) with 64GB of RAM, and 100Gb of fast local storage (SSD).
+* To calibrate the climate emulator for all necessary parametrisations and under PI and PD initial conditions as presented in *Section 3 - A Calibrated Climate Emulator* and reported in the [calibration results](figures_replication/figures_3-4_14-25/result) folder, it requires less than an hour on an ordinary laptop. All calibrations presented in the paper were solved using the [solver](figures_replication/figures_3-4_14-25/solver.py), which we ran on an 8-core Intel compute node on [https://nuvolos.cloud](https://nuvolos.cloud) with 64GB of RAM, and 100Gb of fast local storage (SSD).
 
 * All the postprocessing codes (to produce the summary statistics, plots, and so forth) were run on an ordinary 4-core Intel-based laptop with Ubuntu version 18.04.5 LTS and consume typically few seconds to run.
 
