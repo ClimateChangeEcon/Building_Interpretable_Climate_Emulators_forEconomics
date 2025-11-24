@@ -5,7 +5,7 @@
 </p>
 
 ## Note
-The README is optimised to view in markdown (.md) format. In README.pdf some links may not work correctly.
+The README is optimized for viewing in Markdown (.md) format. Some links may not work correctly in the PDF version.
 
 ## Description of programs and datasets used
 
@@ -262,8 +262,9 @@ For simplicity, we added these datasets to the following folders:
 
 ### Software requirements
 
-The basic dependencies are tensorflow==2.3, hydra-core >= 1.1 and tensorboard (for monitoring).
-For a full set of dependencies see the environment.yaml. The materials have been run and validated on a Linux OS, and the instructions to replicate the results may require some alterations on Windows based systems.
+The core dependencies are tensorflow==2.3, hydra-core>=1.1, and tensorboard (for monitoring).
+For the full list of requirements, please refer to [environment.yaml](Building_Interpretable_Climate_Emulators_forEconomics/DEQN/environment.yaml).
+All materials were run and validated on a Linux OS, and replication on Windows systems may require minor adjustments.
 
 * We provide implementations that use python >= 3.10.
 
@@ -275,11 +276,24 @@ For a full set of dependencies see the environment.yaml. The materials have been
 
 ### Docker image
 
-To pull the pre-built Docker image use this command:
+To pull the tagged pre-built image, use:
 
 ```bash
 docker pull nuvolos/public:648167_building_emulators
 ```
+
+You can view the image and its layers at:
+
+```bash
+https://hub.docker.com/layers/nuvolos/public/648167_building_emulators/images/sha256-35dd37dee70fc99337543925c8c5450009115d2f06ac589b65755324b8b5826b
+```
+
+For a fully reproducible reference to the exact image version, use the digest:
+
+```bash
+docker pull nuvolos/public@sha256:35dd37dee70fc99337543925c8c5450009115d2f06ac589b65755324b8b5826b
+```
+
 
 ### Controlled randomness
 
